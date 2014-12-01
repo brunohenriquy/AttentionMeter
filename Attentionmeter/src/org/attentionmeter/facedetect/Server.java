@@ -21,14 +21,46 @@ import android.widget.TextView;
 public class Server extends Service {
 	
 	public static final String TAG = "MyServiceTag";
+	/**
+	 * @uml.property  name="myBinder"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private final IBinder myBinder = new LocalBinder();
 
-	TextView info, infoip, msg;
+	/**
+	 * @uml.property  name="info"
+	 * @uml.associationEnd  readOnly="true"
+	 */
+	TextView info;
+	/**
+	 * @uml.property  name="infoip"
+	 * @uml.associationEnd  readOnly="true"
+	 */
+	TextView infoip;
+	/**
+	 * @uml.property  name="msg"
+	 * @uml.associationEnd  readOnly="true"
+	 */
+	TextView msg;
+	/**
+	 * @uml.property  name="message"
+	 */
 	String message = "";
+	/**
+	 * @uml.property  name="serverSocket"
+	 */
 	ServerSocket serverSocket;
 	
     public static final String BROADCAST_ACTION = "com.websmithing.broadcasttest.displayevent";
+    /**
+	 * @uml.property  name="handler"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     private final Handler handler = new Handler();
+    /**
+	 * @uml.property  name="intent"
+	 * @uml.associationEnd  
+	 */
     Intent intent;
 	
 	@Override
@@ -51,6 +83,9 @@ public class Server extends Service {
         
     }
     
+    /**
+	 * @uml.property  name="sendUpdatesToUI"
+	 */
     private Runnable sendUpdatesToUI = new Runnable() {
         public void run() {
             DisplayLoggingInfo();            

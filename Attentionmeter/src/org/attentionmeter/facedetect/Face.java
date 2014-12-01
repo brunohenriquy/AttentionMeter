@@ -5,52 +5,175 @@ import org.opencv.core.*;
 
 public class Face {
 	
+	/**
+	 * @uml.property  name="age"
+	 */
 	int age = 0;
+	/**
+	 * @uml.property  name="width"
+	 */
 	int width;
+	/**
+	 * @uml.property  name="height"
+	 */
 	int height;
+	/**
+	 * @uml.property  name="xpt"
+	 */
 	int xpt;
+	/**
+	 * @uml.property  name="ypt"
+	 */
 	int ypt;
+	/**
+	 * @uml.property  name="life"
+	 */
 	int life;
 	
+	/**
+	 * @uml.property  name="state"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	FaceMovementEnum state;
+	/**
+	 * @uml.property  name="lastState"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	FaceMovementEnum lastState;
+	/**
+	 * @uml.property  name="alternations"
+	 */
 	int alternations;
+	/**
+	 * @uml.property  name="faceStill"
+	 */
 	int faceStill;
 	
+	/**
+	 * @uml.property  name="others"
+	 */
 	int others;
+	/**
+	 * @uml.property  name="stills"
+	 */
 	int stills;
+    /**
+	 * @uml.property  name="lefts"
+	 */
     int lefts;
+    /**
+	 * @uml.property  name="rights"
+	 */
     int rights;
+    /**
+	 * @uml.property  name="ups"
+	 */
     int ups;
+    /**
+	 * @uml.property  name="downs"
+	 */
     int downs;
     
+    /**
+	 * @uml.property  name="turnDir"
+	 * @uml.associationEnd  
+	 */
     FaceMovementEnum turnDir;
     
+    /**
+	 * @uml.property  name="eyeTopline"
+	 */
     int eyeTopline;
+    /**
+	 * @uml.property  name="eyeBotline"
+	 */
     int eyeBotline;    
+    /**
+	 * @uml.property  name="eyeLeft1"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point eyeLeft1;
+    /**
+	 * @uml.property  name="eyeLeft2"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point eyeLeft2;
+    /**
+	 * @uml.property  name="eyeRight1"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point eyeRight1;
+    /**
+	 * @uml.property  name="eyeRight2"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point eyeRight2;
     
+    /**
+	 * @uml.property  name="mouthTopline"
+	 */
     int mouthTopline;
+    /**
+	 * @uml.property  name="mouthBotline"
+	 */
     int mouthBotline;
+    /**
+	 * @uml.property  name="mouthTopLeft"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point mouthTopLeft;
+    /**
+	 * @uml.property  name="mouthBotRight"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     Point mouthBotRight;
     
     //### Face detection constants
     //#Face movement constants
+    /**
+	 * @uml.property  name="cAPTURING"
+	 */
     int CAPTURING = 1; //set 1 to enable saving to JPGs
+    /**
+	 * @uml.property  name="fACE_MIN_SIZE"
+	 */
     int FACE_MIN_SIZE = 70; //the bigger, the more fps
     public static final int FACE_MAX_MOVEMENT = 40;
+    /**
+	 * @uml.property  name="fACE_MAX_LIFE"
+	 */
     int FACE_MAX_LIFE = 1;
+    /**
+	 * @uml.property  name="fACE_LR_MOVE_THRESH"
+	 */
     int FACE_LR_MOVE_THRESH = 2;
+    /**
+	 * @uml.property  name="fACE_UD_MOVE_THRESH"
+	 */
     int FACE_UD_MOVE_THRESH = 1;
+    /**
+	 * @uml.property  name="fACE_LR_STATE_CHANGE_THRESH"
+	 */
     int FACE_LR_STATE_CHANGE_THRESH = 1;
+    /**
+	 * @uml.property  name="fACE_UD_STATE_CHANGE_THRESH"
+	 */
     int FACE_UD_STATE_CHANGE_THRESH = 1;
+    /**
+	 * @uml.property  name="fACE_ALTERNATION_THRESH"
+	 */
     int FACE_ALTERNATION_THRESH = 2;
+    /**
+	 * @uml.property  name="fACE_ONE_DIMENSION_THRESH"
+	 */
     int FACE_ONE_DIMENSION_THRESH = 2;
+    /**
+	 * @uml.property  name="fACE_STILL_THRESHOLD"
+	 */
     int FACE_STILL_THRESHOLD = 3;
+    /**
+	 * @uml.property  name="fACE_ALTERNATIONS_EXPIRE"
+	 */
     int FACE_ALTERNATIONS_EXPIRE = 6;
 	
 	Face(int age, int width,int height,int xpt, int ypt, int life){

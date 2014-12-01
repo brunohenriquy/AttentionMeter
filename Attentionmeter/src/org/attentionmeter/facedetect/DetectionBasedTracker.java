@@ -30,6 +30,9 @@ public class DetectionBasedTracker
         mNativeObj = 0;
     }
 
+    /**
+	 * @uml.property  name="mNativeObj"
+	 */
     private long mNativeObj = 0;
 
     private static native long nativeCreateObject(String cascadeName, int minFaceSize);

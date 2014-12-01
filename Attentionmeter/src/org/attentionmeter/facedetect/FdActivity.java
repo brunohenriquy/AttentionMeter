@@ -49,41 +49,125 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
     public static final int        BACK_CAMERA       = 0;
     public static final int        FRONT_CAMERA     = 1;
 
+    /**
+	 * @uml.property  name="cameraOrientation"
+	 * @uml.associationEnd  
+	 */
     private MenuItem               CameraOrientation;
 
+    /**
+	 * @uml.property  name="mRgba"
+	 * @uml.associationEnd  
+	 */
     private Mat                    mRgba;
+    /**
+	 * @uml.property  name="mGray"
+	 * @uml.associationEnd  
+	 */
     private Mat                    mGray;
+    /**
+	 * @uml.property  name="mCascadeFile"
+	 */
     private File                   mCascadeFile;
+    /**
+	 * @uml.property  name="mJavaDetector"
+	 * @uml.associationEnd  
+	 */
     private CascadeClassifier      mJavaDetector;
+    /**
+	 * @uml.property  name="mNativeDetector"
+	 * @uml.associationEnd  
+	 */
     private DetectionBasedTracker  mNativeDetector;
 
+    /**
+	 * @uml.property  name="mDetectorType"
+	 */
     private int                    mDetectorType       = JAVA_DETECTOR;
+    /**
+	 * @uml.property  name="mDetectorName" multiplicity="(0 -1)" dimension="1"
+	 */
     private String[]               mDetectorName;
     
+    /**
+	 * @uml.property  name="mDetectorTypeCamera"
+	 */
     private int                    mDetectorTypeCamera       = FRONT_CAMERA;
+    /**
+	 * @uml.property  name="mDetectorNameCamera" multiplicity="(0 -1)" dimension="1"
+	 */
     private String[]               mDetectorNameCamera;
     
     
 
+    /**
+	 * @uml.property  name="mRelativeFaceSize"
+	 */
     private float                  mRelativeFaceSize   = 0.2f;
+    /**
+	 * @uml.property  name="mAbsoluteFaceSize"
+	 */
     private int                    mAbsoluteFaceSize   = 0;
 
+    /**
+	 * @uml.property  name="mOpenCvCameraView"
+	 * @uml.associationEnd  
+	 */
     private CameraBridgeViewBase   mOpenCvCameraView;
     
+    /**
+	 * @uml.property  name="ecgValue"
+	 * @uml.associationEnd  
+	 */
     public TextView ecgValue;
+    /**
+	 * @uml.property  name="gsrValue"
+	 * @uml.associationEnd  
+	 */
     public TextView gsrValue;
+    /**
+	 * @uml.property  name="eegValue"
+	 * @uml.associationEnd  
+	 */
     public TextView eegValue;
+    /**
+	 * @uml.property  name="emgValue"
+	 * @uml.associationEnd  
+	 */
     public TextView emgValue;
+    /**
+	 * @uml.property  name="ipValue"
+	 * @uml.associationEnd  
+	 */
     public TextView ipValue;
     
+    /**
+	 * @uml.property  name="trackedFaces"
+	 * @uml.associationEnd  multiplicity="(0 -1)" elementType="org.attentionmeter.facedetect.Face"
+	 */
     LinkedList<Face> trackedFaces;
     
+    /**
+	 * @uml.property  name="mServer"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     Server mServer;
     
+    /**
+	 * @uml.property  name="mBounded"
+	 */
     boolean mBounded;
     
+    /**
+	 * @uml.property  name="intent"
+	 * @uml.associationEnd  
+	 */
     private Intent intent;
 
+    /**
+	 * @uml.property  name="mLoaderCallback"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
         public void onManagerConnected(int status) {
@@ -393,6 +477,10 @@ public class FdActivity extends Activity implements CvCameraViewListener2 {
         startService(intent);
     }
     
+    /**
+	 * @uml.property  name="broadcastReceiver"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
