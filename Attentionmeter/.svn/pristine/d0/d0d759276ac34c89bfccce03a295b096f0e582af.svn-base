@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<org.opencv.android.JavaCameraView
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:id="@+id/fd_activity_surface_view" />
+
+	<TextView
+	    android:id="@+id/ecgLabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="45dp"
+	    android:layout_marginTop="15dp"
+	    android:text="ECG"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/gsrLabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/ecgLabel"
+	    android:layout_below="@+id/ecgLabel"
+	    android:layout_marginTop="49dp"
+	    android:text="GSR"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/eegLabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/gsrLabel"
+	    android:layout_below="@+id/gsrLabel"
+	    android:layout_marginTop="48dp"
+	    android:text="EEG"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/emgLabel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/eegLabel"
+	    android:layout_below="@+id/eegLabel"
+	    android:layout_marginTop="48dp"
+	    android:text="EMG"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/ecgValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/ecgLabel"
+	    android:layout_below="@+id/ecgLabel"
+	    android:text="000"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/gsrValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/gsrLabel"
+	    android:layout_below="@+id/gsrLabel"
+	    android:text="000"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/eegValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/eegLabel"
+	    android:layout_below="@+id/eegLabel"
+	    android:text="000"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/emgValue"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/emgLabel"
+	    android:layout_below="@+id/emgLabel"
+	    android:text="000"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+	<TextView
+	    android:id="@+id/ipServer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/ecgLabel"
+	    android:layout_alignBottom="@+id/ecgLabel"
+	    android:layout_centerHorizontal="true"
+	    android:text="IP"
+	    android:textColor="@android:color/holo_orange_dark" />
+
+</RelativeLayout>
+
+
