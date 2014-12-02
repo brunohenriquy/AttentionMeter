@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="facedetect" size="1000,1479" id="org.attentionmeter.facedetect" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020417474656E74696F6E6D65746572">
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.2/@sourceConnections.0" name="FdActivity" location="450,97" size="189,340" id="org.attentionmeter.facedetect/FdActivity" runTimeClassModel="onCreateOptionsMenu(Landroid.view.Menu;),onCameraViewStopped(),bACK_CAMERA,onPause(),onOptionsItemSelected(Landroid.view.MenuItem;),onCreate(Landroid.os.Bundle;),FdActivity(),mBounded,getColor(Lorg.attentionmeter.facedetect.Face;),jAVA_DETECTOR,fRONT_CAMERA,onDestroy(),onCameraFrame(Lorg.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;),nATIVE_DETECTOR,onCameraViewStarted(II),onResume()">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="facedetect" size="1000,1479" id="org.attentionmeter.facedetect" metadata="uml2-1.0" initialized="true" scrolledY="551" tag="10" key="32303037303533312D313020417474656E74696F6E6D65746572">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.2/@sourceConnections.0" name="FdActivity" location="450,97" size="189,340" id="org.attentionmeter.facedetect/FdActivity" runTimeClassModel="getColor(Lorg.attentionmeter.facedetect.Face;),onDestroy(),bACK_CAMERA,nATIVE_DETECTOR,onCreate(Landroid.os.Bundle;),onCameraViewStarted(II),onPause(),onOptionsItemSelected(Landroid.view.MenuItem;),fRONT_CAMERA,jAVA_DETECTOR,onCameraViewStopped(),onCameraFrame(Lorg.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;),FdActivity(),mBounded,onResume(),onCreateOptionsMenu(Landroid.view.Menu;)">
     <children xsi:type="editmodel:CompartmentEditModel" size="162,90">
       <children xsi:type="editmodel:AttributeEditModel" name="bACK_CAMERA" id="org.attentionmeter.facedetect/FdActivity#bACK_CAMERA"/>
       <children xsi:type="editmodel:AttributeEditModel" name="fRONT_CAMERA" id="org.attentionmeter.facedetect/FdActivity#fRONT_CAMERA"/>
@@ -23,31 +23,31 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="org.attentionmeter.facedetect/Server@mServer+org.attentionmeter.facedetect/FdActivity@" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,278" id="org.attentionmeter.facedetect/Server@mServer+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/FdActivity#" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" name="mServer" location="226,60" id="org.attentionmeter.facedetect/Server@mServer+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/Server#mServer" multiplicityLabel="//@children.0/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.2/@children.0" navigable="true" changeability="2">
-        <children xsi:type="editmodel:LabelEditModel" name=" ~ mServer" location="338,352" size="63,16" anchorKind="LastPart"/>
-        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="338,382" size="22,16" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ mServer" location="338,354" size="53,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="338,382" size="18,14" anchorKind="LastPart"/>
       </children>
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.attentionmeter.facedetect/FdActivity->org.attentionmeter.facedetect/Face*org.attentionmeter.facedetect/FdActivity-Soyatec::Access->org.attentionmeter.facedetect/Face*org.attentionmeter.facedetect/FdActivity-Soyatec::Import->org.attentionmeter.facedetect/Face*org.attentionmeter.facedetect/FdActivity->org.attentionmeter.facedetect/Face" source="//@children.0" target="//@children.3" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Import»" size="102,16" anchorKind="MiddlePart"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="189,278" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,60"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Access, Import»" size="85,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="189,279" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,61"/>
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.attentionmeter.facedetect/FdActivity-Soyatec::Import->org.attentionmeter.facedetect/Server" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.2/@children.2" label="//@children.0/@sourceConnections.2/@children.0" sourceEnd="//@children.0/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="50,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,282" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="226,93"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="226,91"/>
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.attentionmeter.facedetect/FdActivity->org.attentionmeter.facedetect/DetectionBasedTracker*org.attentionmeter.facedetect/FdActivity-Soyatec::Import->org.attentionmeter.facedetect/DetectionBasedTracker" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.3/@children.2" label="//@children.0/@sourceConnections.3/@children.0" sourceEnd="//@children.0/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="50,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="189,80" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,80"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.0/@sourceConnections.2" name="Server" location="105,315" size="226,368" id="org.attentionmeter.facedetect/Server" runTimeClassModel="message,bROADCAST_ACTION,org.attentionmeter.facedetect.Server.LocalBinder,onStart(Landroid.content.Intent;I),serverSocket,onCreate(),onBind(Landroid.content.Intent;),org.attentionmeter.facedetect.Server.SocketServerThread,tAG">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.0/@sourceConnections.2" name="Server" location="105,315" size="226,368" id="org.attentionmeter.facedetect/Server" runTimeClassModel="org.attentionmeter.facedetect.Server.SocketServerThread,serverSocket,onCreate(),onStart(Landroid.content.Intent;I),tAG,message,bROADCAST_ACTION,org.attentionmeter.facedetect.Server.LocalBinder,onBind(Landroid.content.Intent;)">
     <children xsi:type="editmodel:CompartmentEditModel" size="195,72">
       <children xsi:type="editmodel:AttributeEditModel" name="bROADCAST_ACTION" id="org.attentionmeter.facedetect/Server#bROADCAST_ACTION"/>
       <children xsi:type="editmodel:AttributeEditModel" name="message" id="org.attentionmeter.facedetect/Server#message"/>
@@ -68,7 +68,7 @@
         <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
         <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
       </children>
-      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="SocketServerThread" location="766,481" size="203,106" id="org.attentionmeter.facedetect/Server$SocketServerThread" runTimeClassModel="socketServerPORT,count,run()">
+      <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="SocketServerThread" location="766,481" size="203,106" id="org.attentionmeter.facedetect/Server$SocketServerThread" runTimeClassModel="run(),socketServerPORT,count">
         <children xsi:type="editmodel:CompartmentEditModel" size="152,36">
           <children xsi:type="editmodel:AttributeEditModel" name="count" id="org.attentionmeter.facedetect/Server$SocketServerThread#count"/>
           <children xsi:type="editmodel:AttributeEditModel" name="socketServerPORT" id="org.attentionmeter.facedetect/Server$SocketServerThread#socketServerPORT"/>
@@ -81,18 +81,18 @@
       </children>
     </children>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.attentionmeter.facedetect/Server->org.attentionmeter.facedetect/Server$SocketServerThread" source="//@children.1" target="//@children.1/@children.2/@children.1" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="226,236" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,6"/>
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.attentionmeter.facedetect/Server->org.attentionmeter.facedetect/Server$LocalBinder" source="//@children.1" target="//@children.1/@children.2/@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="226,334" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,33"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.3" name="DetectionBasedTracker" location="795,97" size="225,160" id="org.attentionmeter.facedetect/DetectionBasedTracker" runTimeClassModel="stop(),DetectionBasedTracker(Ljava.lang.String;I),setMinFaceSize(I),start(),detect(Lorg.opencv.core.Mat;Lorg.opencv.core.MatOfRect;),release()">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.3" name="DetectionBasedTracker" location="795,97" size="225,160" id="org.attentionmeter.facedetect/DetectionBasedTracker" runTimeClassModel="DetectionBasedTracker(Ljava.lang.String;I),stop(),start(),setMinFaceSize(I),detect(Lorg.opencv.core.Mat;Lorg.opencv.core.MatOfRect;),release()">
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="166,108">
       <children xsi:type="editmodel:MethodEditModel" name="DetectionBasedTracker" id="org.attentionmeter.facedetect/DetectionBasedTracker#DetectionBasedTracker(Ljava.lang.String;I)"/>
@@ -104,16 +104,16 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.attentionmeter.facedetect/DetectionBasedTracker@mNativeDetector+org.attentionmeter.facedetect/FdActivity@" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" name="mNativeDetector" location="0,72" id="org.attentionmeter.facedetect/DetectionBasedTracker@mNativeDetector+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/DetectionBasedTracker#mNativeDetector" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
-        <children xsi:type="editmodel:LabelEditModel" name=" - mNativeDetector" location="681,146" size="107,16" anchorKind="FirstPart"/>
-        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="766,176" size="22,16" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name=" - mNativeDetector" location="699,148" size="89,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="770,176" size="18,14" anchorKind="FirstPart"/>
       </children>
       <children xsi:type="editmodel:AssociationEndEditModel" location="189,72" id="org.attentionmeter.facedetect/DetectionBasedTracker@mNativeDetector+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/FdActivity#"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="Face" location="795,315" size="286,826" id="org.attentionmeter.facedetect/Face" runTimeClassModel="fACE_MAX_MOVEMENT,mouthTopline,isShaking(),xpt,fACE_ONE_DIMENSION_THRESH,rights,ypt,fACE_UD_STATE_CHANGE_THRESH,Face(IIIIII),lefts,isNodding(),isStill(),updateMouth(),fACE_MAX_LIFE,fACE_STILL_THRESHOLD,height,life,age,isTooOld(),mouthBotline,getTurnDir(IIIIIIII),others,alternations,eyeBotline,width,eyeTopline,resetNonAltCounts(),resetCounts(),updateFace(IIII),fACE_ALTERNATIONS_EXPIRE,fACE_LR_STATE_CHANGE_THRESH,fACE_UD_MOVE_THRESH,fACE_LR_MOVE_THRESH,faceStill,updateEyes(),stills,updateMoveState(Lorg.attentionmeter.enumerator.FaceMovementEnum;),cAPTURING,fACE_MIN_SIZE,fACE_ALTERNATION_THRESH,updateLife(),downs,ups">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.1" name="Face" location="795,315" size="286,826" id="org.attentionmeter.facedetect/Face" runTimeClassModel="mouthBotline,updateMoveState(Lorg.attentionmeter.enumerator.FaceMovementEnum;),cAPTURING,updateLife(),updateFace(IIII),fACE_MIN_SIZE,eyeBotline,fACE_MAX_LIFE,faceStill,life,fACE_LR_MOVE_THRESH,updateMouth(),isStill(),rights,stills,resetNonAltCounts(),updateEyes(),others,height,resetCounts(),eyeTopline,downs,fACE_LR_STATE_CHANGE_THRESH,fACE_STILL_THRESHOLD,alternations,fACE_MAX_MOVEMENT,lefts,mouthTopline,isNodding(),Face(IIIIII),getTurnDir(IIIIIIII),fACE_ALTERNATIONS_EXPIRE,isTooOld(),width,fACE_UD_STATE_CHANGE_THRESH,ups,isShaking(),ypt,fACE_ALTERNATION_THRESH,xpt,age,fACE_UD_MOVE_THRESH,fACE_ONE_DIMENSION_THRESH">
     <children xsi:type="editmodel:CompartmentEditModel" size="263,540">
       <children xsi:type="editmodel:AttributeEditModel" name="age" id="org.attentionmeter.facedetect/Face#age"/>
       <children xsi:type="editmodel:AttributeEditModel" name="alternations" id="org.attentionmeter.facedetect/Face#alternations"/>
@@ -163,10 +163,10 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:AssociationEditModel" id="org.attentionmeter.facedetect/Face@trackedFaces+org.attentionmeter.facedetect/FdActivity@" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:WireLabelEditModel" size="0,16" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" name="trackedFaces" location="0,48" id="org.attentionmeter.facedetect/Face@trackedFaces+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/Face#trackedFaces" attachSource="true" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
-        <children xsi:type="editmodel:LabelEditModel" name=" ~ trackedFaces" location="693,340" size="95,16" anchorKind="FirstPart"/>
-        <children xsi:type="editmodel:LabelEditModel" name="*" location="783,370" size="5,16" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name=" ~ trackedFaces" location="710,342" size="78,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="784,370" size="4,14" anchorKind="FirstPart"/>
       </children>
       <children xsi:type="editmodel:AssociationEndEditModel" location="189,266" id="org.attentionmeter.facedetect/Face@trackedFaces+org.attentionmeter.facedetect/FdActivity@|org.attentionmeter.facedetect/FdActivity#"/>
     </sourceConnections>
