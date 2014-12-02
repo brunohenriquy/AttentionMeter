@@ -31,8 +31,8 @@
 									<listOptionValue builtIn="false" value="&quot;C:\MinGW\lib\gcc\mingw32\4.8.1\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\MinGW\lib\gcc\mingw32\4.8.1\include\c++&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\MinGW\lib\gcc\mingw32\4.8.1\include\c++\mingw32&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\android-ndk-r9b\platforms\android-19\arch-x86\usr\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}D:/GitHub/sdk/native/jni/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\android-ndk-r9b\platforms\android-19\arch-x86\usr\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}E:/GitHub/sdk/native/jni/include&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.1424359063" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ANDROID=1"/>
@@ -44,8 +44,8 @@
 									<listOptionValue builtIn="false" value="&quot;${NDKROOT}/platforms/android-9/arch-arm/usr/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${NDKROOT}/sources/cxx-stl/gnu-libstdc++/4.6/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${NDKROOT}/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi-v7a/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;D:\android-ndk-r9b\platforms\android-19\arch-x86\usr\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}D:\GitHub\sdk\native\jni\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}E:\GitHub\sdk\native\jni\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\android-ndk-r9b\platforms\android-19\arch-x86\usr\include&quot;"/>
 								</option>
 								<option id="org.eclipse.cdt.build.core.settings.holder.symbols.719752707" name="Symbols" superClass="org.eclipse.cdt.build.core.settings.holder.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ANDROID=1"/>
@@ -75,4 +75,5 @@
 		<resource resourceType="PROJECT" workspacePath="/OpenCV Sample - face-detection"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>
